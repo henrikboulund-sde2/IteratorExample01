@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class MusicPlaylist
+public class MusicPlaylist implements IPlaylist
 {
     private List<Song> playlist;
 
@@ -15,7 +15,8 @@ public class MusicPlaylist
         playlist.add(song);
     }
 
-    public SongIterator createIterator()
+    @Override
+    public ISongIterator createIterator()
     {
         return new PlaylistIterator(playlist);
     }

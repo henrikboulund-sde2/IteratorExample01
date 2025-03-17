@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class PlaylistIterator implements SongIterator
+public class PlaylistIterator implements ISongIterator
 {
     private List<Song> playlist;
     private int position;

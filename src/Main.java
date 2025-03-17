@@ -8,7 +8,7 @@ public class Main
         playlist.addSong(new Song("Someone Like You", "Adele", 278));
         playlist.addSong(new Song("Billie Jean", "Michael Jackson", 312));
 
-        SongIterator iterator = playlist.createIterator();
+        ISongIterator iterator = playlist.createIterator();
 
         while (iterator.hasNext()) {
             Song song = iterator.next();

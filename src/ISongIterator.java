@@ -1,4 +1,4 @@
-public interface SongIterator
+public interface ISongIterator
 {
     boolean hasNext();
     Song next();
